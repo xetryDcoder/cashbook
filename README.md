@@ -1,6 +1,5 @@
-
 Project Description: Cashbook - Open Source Accounting Software
-
+ 
 Cashbook is a simple yet powerful open-source accounting application designed to help individuals, small businesses, and organizations manage their financial transactions effortlessly. Built using modern technologies like Node.js, Vue.js, and Vuetify, Cashbook aims to provide an intuitive and accessible solution for basic accounting needs.
 
 Currently hosted on hcashbook.com, Cashbook is evolving into a free-to-use platform through community-driven contributions.
@@ -11,6 +10,7 @@ Multi-Business Support: Manage multiple businesses under a single account.
 Google Login Integration: Simplified authentication process using Google OAuth.
 Interactive Dashboards: Visualize financial data through charts and summaries.
 Seamless User Experience: Responsive and user-friendly interface powered by Vuetify.
+
 Vision
 The project aspires to become a completely free and community-driven basic accounting software for everyone. With contributions from developers worldwide, it will evolve to include more features while remaining accessible to all.
 
@@ -20,6 +20,7 @@ We believe in the power of open-source collaboration. By making Cashbook open so
 Foster innovation and improvements from a global community of developers.
 Provide a transparent and adaptable solution for accounting needs.
 Make essential financial tools available to everyone, regardless of budget.
+
 How You Can Contribute
 Whether you're a developer, designer, or accountant, your contributions can make a difference! Help us improve Cashbook by:
 
@@ -58,20 +59,17 @@ Set up your database (if required for admin seeding).
 Backend Installation
 Navigate to the backend directory:
 
-bash
-Copy code
+
 cd backend
 Install dependencies:
 
-bash
-Copy code
+
 npm install
 Configure the application (see Configuration).
 
 Start the server:
 
-bash
-Copy code
+
 npm start
 By default, the server will run on http://localhost:4000.
 
@@ -100,28 +98,26 @@ const googleAuthData = {
     redirect_uri: `${CLIENT_BASE_URL}/auth/callback`,
     grant_type: 'authorization_code'
 };
+
 Database Seeding
 To seed the admin user, run the admin_seeder.js file in the backend/seeder directory:
-bash
-Copy code
+
 node seeder/admin_seeder.js
+
 Frontend Setup
 Navigate to the frontend directory:
 
-bash
-Copy code
+
 cd frontend
 Install dependencies:
 
-bash
-Copy code
+
 npm install
 Update the global_config.js file in the frontend/config directory with the appropriate API URLs.
 
 Start the Vue application:
 
-bash
-Copy code
+
 npm run serve
 By default, the frontend will run on http://localhost:3001.
 
@@ -147,8 +143,7 @@ app.use(vue3GoogleLogin, {
 });
 Deployment
 Build the Vue frontend:
-bash
-Copy code
+
 npm run build
 Deploy the built files to your hosting platform (e.g., cPanel, AWS, etc.).
 Ensure the Node.js backend server is running on your production server.
@@ -160,4 +155,4 @@ Ensure you keep sensitive data like the Google Client ID and Secret private.
 Use .env files for better security in a production environment.
 
 
-For any issue update you can create issue or directly contact me @ hemantajungkarki@gmail.com 
+For any issue update, you can createan  issue or directly contact me @ hemantajungkarki@gmail.com  #opensource #MIT #freetouse #freesoftware
